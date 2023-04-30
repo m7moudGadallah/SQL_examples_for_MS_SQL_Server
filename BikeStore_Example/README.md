@@ -1,6 +1,6 @@
 # BikeStore Example
 
-![50%](https://progress-bar.dev/40/?title=Done)
+![60%](https://progress-bar.dev/60/?title=Done)
 
 The BikeStore example is a sample database for a fictional bike store. The database is divided into two schemas: `sales` and `production`.
 
@@ -15,7 +15,7 @@ The above image shows the entity-relationship (ER) model for the BikeStore datab
 The following SQL scripts can be used to construct the BikeStore database:
 
 - **[create_bikestore.sql](./SQL_Scripts/create_bikestore.sql)**: A script that creates the `sales` and `production` schemas, along with all the necessary tables, constraints, and indexes.
-- **populate_bikestore.sql**: A script that inserts sample data into the `sales` and `production` tables.
+- **[populate_bikestore.sql](./SQL_Scripts/populate_bikestore.sql)**: A script that inserts sample data into the `sales` and `production` tables.
 - **queries.sql**: A script that includes a set of example queries for the BikeStore database, including basic SELECT queries, JOIN queries, and aggregate queries.
 
 ## Getting Started
