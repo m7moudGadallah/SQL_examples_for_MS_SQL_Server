@@ -1,5 +1,4 @@
 /* creating BikeStore database */
-
 USE master;
 GO
 
@@ -88,8 +87,8 @@ CREATE TABLE sales.customers (
 	customer_id INT,
 	first_name VARCHAR(20) NOT NULL,
 	last_name VARCHAR(20) NOT NULL,
-	phone VARCHAR(20),
-	email VARCHAR(20) NOT NULL,
+	phone VARCHAR(20) UNIQUE,
+	email VARCHAR(20) NOT NULL UNIQUE,
 	street VARCHAR(20),
 	city VARCHAR(20) NOT NULL,
 	state VARCHAR(20),
@@ -101,11 +100,11 @@ GO
 
 /* create staffs table */
 CREATE TABLE sales.staffs (
-	staff_id INT,
+	staff_id INT IDENTITY (1, 1),
 	first_name VARCHAR(20) NOT NULL,
 	last_name VARCHAR(20) NOT NULL,
-	email VARCHAR(20) NOT NULL,
-	phone VARCHAR(20),
+	email VARCHAR(20) NOT NULL UNIQUE,
+	phone VARCHAR(20) UNIQUE,
 	active VARCHAR(5),
 	store_id INT,
 	manager_id INT,
@@ -119,9 +118,9 @@ GO
 
 /* create orders table */
 CREATE TABLE sales.orders (
-	order_id INT,
+	order_id INT IDENTITY(1, 1),
 	customer_id INT,
-	order_status VARCHAR(20) NOT NULL,
+	order_status TINYINT NOT NULL,
 	order_date	DATE NOT NULL,
 	required_date DATE NOT NULL,
 	shipped_date DATE NOT NULL,
@@ -146,7 +145,7 @@ GO
 
 /* create stores table */
 CREATE TABLE sales.stores (
-	store_id INT,
+	store_id INT IDENTITY (1, 1),
 	store_name VARCHAR(20) NOT NULL,
 	phone VARCHAR(20) NOT NULL,
 	email VARCHAR(20) NOT NULL,
