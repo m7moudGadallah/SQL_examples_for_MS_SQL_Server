@@ -12,6 +12,8 @@ The repository includes the following examples:
 
 ### Exmaples List
 
+- ***[BikeStore](./BikeStore_Example/)***
+
 ## Getting started
 
 To get started with this repository, simply clone the repository to your local machine and open it in your preferred SQL editor or environment. You can then explore the various examples to learn more about [SQL with MS SQL Server](https://www.sqlservertutorial.net/).
