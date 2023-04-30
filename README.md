@@ -10,8 +10,7 @@ The repository includes the following examples:
 
 **SQL scripts:** A set of SQL scripts that demonstrate how to create tables, insert data, and query data in the sample database.
 
-|Example|ER Model|SQL Script|
-|-------|--------|----------|
+### Exmaples List
 
 ## Getting started
 
