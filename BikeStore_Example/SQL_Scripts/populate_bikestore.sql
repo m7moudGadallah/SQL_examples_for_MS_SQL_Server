@@ -51,16 +51,16 @@ GO
 
 /* Insert data into staffs table */
 INSERT INTO sales.staffs (first_name, last_name, email, phone, active, store_id, manager_id) 
-VALUES ('Bob', 'Smith', 'bsmith@store.com', '555-555-5555', 'yes', 1, NULL),
-	('Alice', 'Jones', 'ajones@store.com', '555-555-5555', 'yes', 1, 1),
-	('Mike', 'Brown', 'mbrown@store.com', '555-555-5555', 'yes', 2, NULL),
-	('Emma', 'Davis', 'edavis@store.com', '555-555-5555', 'yes', 2, 3);
+VALUES ('Bob', 'Smith', 'bsmith@store.com', '555-525-5555', 'yes', 1, NULL),
+	('Alice', 'Jones', 'ajones@store.com', '555-555-5535', 'yes', 1, 1),
+	('Mike', 'Brown', 'mbrown@store.com', '555-455-5555', 'yes', 2, NULL),
+	('Emma', 'Davis', 'edavis@store.com', '555-595-5555', 'yes', 2, 3);
 GO
 
 /* Insert data into orders table */
 INSERT INTO sales.orders (customer_id, order_status, order_date, required_date, shipped_date, store_id, staff_id) 
 VALUES (1, 2, '2022-04-01', '2022-04-10', '2022-04-05', 1, 1),
-	(2, 1, '2022-04-05', '2022-04-15', NULL, 2, 3);
+	(2, 1, '2022-04-05', '2022-04-15', '2022-04-12', 2, 3);
 GO
 
 /* Insert data into order_items table */
